@@ -3,20 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		1DF4406953F71079E781F73A /* Pods_FirebaseAuthDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C59F03AD10B9D65BB2F37D8 /* Pods_FirebaseAuthDemoTests.framework */; };
 		CD2F150D2374785D00DE3A38 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F150C2374785D00DE3A38 /* AppDelegate.swift */; };
 		CD2F150F2374785D00DE3A38 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F150E2374785D00DE3A38 /* SceneDelegate.swift */; };
-		CD2F15112374785D00DE3A38 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F15102374785D00DE3A38 /* ViewController.swift */; };
+		CD2F15112374785D00DE3A38 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F15102374785D00DE3A38 /* LogInViewController.swift */; };
 		CD2F15142374785D00DE3A38 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2F15122374785D00DE3A38 /* Main.storyboard */; };
 		CD2F15162374786100DE3A38 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CD2F15152374786100DE3A38 /* Assets.xcassets */; };
 		CD2F15192374786100DE3A38 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CD2F15172374786100DE3A38 /* LaunchScreen.storyboard */; };
 		CD2F15242374786100DE3A38 /* FirebaseAuthDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F15232374786100DE3A38 /* FirebaseAuthDemoTests.swift */; };
 		CD2F152F23747A4500DE3A38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD2F152E23747A4500DE3A38 /* GoogleService-Info.plist */; };
 		CD2F153023747A4600DE3A38 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CD2F152E23747A4500DE3A38 /* GoogleService-Info.plist */; };
+		CD2F1532237482D300DE3A38 /* FirebaseAuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CD2F1531237482D300DE3A38 /* FirebaseAuthService.swift */; };
 		F57710845C4A5301A57EE165 /* Pods_FirebaseAuthDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 18DFF4A11E18E5E751A85ED8 /* Pods_FirebaseAuthDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -39,7 +40,7 @@
 		CD2F15092374785D00DE3A38 /* FirebaseAuthDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseAuthDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CD2F150C2374785D00DE3A38 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CD2F150E2374785D00DE3A38 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CD2F15102374785D00DE3A38 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CD2F15102374785D00DE3A38 /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		CD2F15132374785D00DE3A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CD2F15152374786100DE3A38 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CD2F15182374786100DE3A38 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -48,6 +49,7 @@
 		CD2F15232374786100DE3A38 /* FirebaseAuthDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthDemoTests.swift; sourceTree = "<group>"; };
 		CD2F15252374786100DE3A38 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CD2F152E23747A4500DE3A38 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CD2F1531237482D300DE3A38 /* FirebaseAuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseAuthService.swift; sourceTree = "<group>"; };
 		DC8AFAC1286AA741801668F8 /* Pods-FirebaseAuthDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseAuthDemo.release.xcconfig"; path = "Target Support Files/Pods-FirebaseAuthDemo/Pods-FirebaseAuthDemo.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -79,7 +81,6 @@
 				0ABC673F1A5F1DAA127DD962 /* Pods-FirebaseAuthDemoTests.debug.xcconfig */,
 				168317138E14CD5382B476EC /* Pods-FirebaseAuthDemoTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -108,8 +109,9 @@
 			children = (
 				CD2F150C2374785D00DE3A38 /* AppDelegate.swift */,
 				CD2F150E2374785D00DE3A38 /* SceneDelegate.swift */,
-				CD2F15102374785D00DE3A38 /* ViewController.swift */,
+				CD2F15102374785D00DE3A38 /* LogInViewController.swift */,
 				CD2F15122374785D00DE3A38 /* Main.storyboard */,
+				CD2F1531237482D300DE3A38 /* FirebaseAuthService.swift */,
 				CD2F15152374786100DE3A38 /* Assets.xcassets */,
 				CD2F15172374786100DE3A38 /* LaunchScreen.storyboard */,
 				CD2F151A2374786100DE3A38 /* Info.plist */,
@@ -306,8 +308,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CD2F15112374785D00DE3A38 /* ViewController.swift in Sources */,
+				CD2F15112374785D00DE3A38 /* LogInViewController.swift in Sources */,
 				CD2F150D2374785D00DE3A38 /* AppDelegate.swift in Sources */,
+				CD2F1532237482D300DE3A38 /* FirebaseAuthService.swift in Sources */,
 				CD2F150F2374785D00DE3A38 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
