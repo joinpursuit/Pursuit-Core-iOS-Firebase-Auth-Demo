@@ -23,7 +23,7 @@ class FirebaseAuthService {
         }
     }
     
-    func createNewUser(withEmail email : String, andPassword password: String, onCompletion: @escaping (Result<User, Error>) -> Void) {
+    func createNewUser(withEmail email: String, andPassword password: String, onCompletion: @escaping (Result<User, Error>) -> Void) {
         firebaseAuth.createUser(withEmail: email, password: password) { (result, error) in
             if let createdUser = result?.user {
                 onCompletion(.success(createdUser))
@@ -46,5 +46,4 @@ class FirebaseAuthService {
     // MARK: -Private Initializers
     
     private init() {}
-
 }
