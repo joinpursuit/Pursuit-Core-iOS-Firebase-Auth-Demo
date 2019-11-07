@@ -10,11 +10,7 @@ class FirebaseAuthService {
     // MARK: -Static Properties
     
     static let manager = FirebaseAuthService()
-    
-    // MARK: -Internal Properties
-    
-    let firebaseAuth = Auth.auth()
-        
+           
     // MARK: -Internal Functions
     
     func loginUser(withEmail email: String, andPassword password: String, onCompletion: @escaping (Result<User, Error>) -> Void) {
@@ -37,7 +33,17 @@ class FirebaseAuthService {
         }
     }
     
-    // MARK: -Initializers
+    // MARK: -Internal Properties
+    
+    var currentUser: User? {
+        return firebaseAuth.currentUser
+    }
+    
+    // MARK: -Private Properties
+    
+    private let firebaseAuth = Auth.auth()
+    
+    // MARK: -Private Initializers
     
     private init() {}
 
