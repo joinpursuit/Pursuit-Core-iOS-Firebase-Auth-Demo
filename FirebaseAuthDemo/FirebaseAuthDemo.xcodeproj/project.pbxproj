@@ -147,6 +147,7 @@
 				CD2F15052374785D00DE3A38 /* Sources */,
 				CD2F15062374785D00DE3A38 /* Frameworks */,
 				CD2F15072374785D00DE3A38 /* Resources */,
+				4E0B49703F83156567B11B3A /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -237,6 +238,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		4E0B49703F83156567B11B3A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseAuthDemo/Pods-FirebaseAuthDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseAuthDemo/Pods-FirebaseAuthDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseAuthDemo/Pods-FirebaseAuthDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		9506C2020FB5ABD02DA8DEF4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
