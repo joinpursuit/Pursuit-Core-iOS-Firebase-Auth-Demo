@@ -6,9 +6,16 @@ enum GenericError: Error {
 }
 
 class FirebaseAuthService {
+    
+    // MARK: -Static Properties
+    
     static let manager = FirebaseAuthService()
+    
+    // MARK: -Internal Properties
+    
     let firebaseAuth = Auth.auth()
-    private init() {}
+        
+    // MARK: -Internal Functions
     
     func loginUser(withEmail email: String, andPassword password: String, onCompletion: @escaping (Result<User, Error>) -> Void) {
         firebaseAuth.signIn(withEmail: email, password: password) { (result, error) in
@@ -29,4 +36,9 @@ class FirebaseAuthService {
             }
         }
     }
+    
+    // MARK: -Initializers
+    
+    private init() {}
+
 }
